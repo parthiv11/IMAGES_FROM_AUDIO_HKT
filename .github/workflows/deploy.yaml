@@ -1,4 +1,4 @@
-name: Deploy Galaxy made with ThreeJS
+name: Deploy Streamlit App
 on: [push]
 jobs:
   deploy:
@@ -9,5 +9,5 @@ jobs:
       with:
         python-version: '3.7'
     - run: pip install -r requirements.txt
-    - run: pip install PyAudio-0.2.11-cp37-cp37m-win_amd64.whl
+    - run: pip install PyAudio-0.2.11.tar.gz
     - run: streamlit run app.py
